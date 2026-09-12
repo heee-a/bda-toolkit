@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bdatools"
+version = "0.1.0"
+description = "开箱即用的商业数据分析工具箱：数据清洗、EDA、销售趋势、RFM、ABC、留存、购物篮、漏斗、Excel 报告 / A batteries-included business data analysis toolkit"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "heee-a" }]
+keywords = ["business-analysis", "data-analysis", "rfm", "cohort", "abc-analysis", "pandas"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial",
+]
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+    "openpyxl>=3.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+bda = "bdatools.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bdatools*", "examples*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

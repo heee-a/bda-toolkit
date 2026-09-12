@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.idea/
+.vscode/
+
+# Outputs (analysis results are reproducible)
+outputs/
+report/
+*.xlsx
+!examples/*.xlsx
+
+# OS
+.DS_Store
+Thumbs.db
