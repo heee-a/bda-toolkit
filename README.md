@@ -9,6 +9,16 @@
 
 不依赖 BI 平台、不需要写 SQL，只要 `pandas` 能读的数据都能分析。
 
+## 报告长什么样
+
+以下均由 `bda demo` 在 6000 行模拟订单上自动生成（[examples/sample_report.xlsx](examples/sample_report.xlsx) 是完整 Excel 报告样本）：
+
+| 销售趋势（柱=销售额，线=环比） | RFM 客户分层 |
+|---|---|
+| ![销售趋势](docs/sample_trend.png) | ![RFM 分层](docs/sample_rfm.png) |
+| **品类 ABC 帕累托图** | **完整 Excel 报告含 16 个 Sheet** |
+| ![帕累托](docs/sample_pareto.png) | 清洗日志 · 数据概览 · 列画像 · 相关性 · 销售趋势 · 品类ABC · RFM 明细/分层 · 留存矩阵 · 关联规则 · 转化漏斗 |
+
 ## 包含的分析工具
 
 | 模块 | 功能 | 典型问题 |
