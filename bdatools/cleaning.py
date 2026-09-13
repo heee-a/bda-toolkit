@@ -4,7 +4,6 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
-import numpy as np
 import pandas as pd
 
 # 常见中文业务列名 -> 标准英文列名（standardize_columns 自动映射）
